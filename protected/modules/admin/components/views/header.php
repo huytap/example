@@ -9,60 +9,7 @@
 
             <ul class="nav ace-nav pull-right">
 
-                <li class="purple">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-bell-alt icon-animated-bell"></i>
-                        <span class="badge badge-important">
-                            <?php
-                                if(isset($customer)){
-                                    echo count($customer);
-                                }else{
-                                    echo '0';
-                                }
-                            ?>
-                        </span>
-                    </a>
-
-                    <ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-closer">
-                        <li class="nav-header">
-                            <i class="icon-warning-sign"></i>
-                            <?php
-                                if(isset($customer)){
-                                    echo count($customer);
-                                }else{
-                                    echo '0';
-                                }
-                            ?> Notifications
-                        </li>
-                        <li>
-                            
-                                <a href="<?php echo Yii::app()->createAbsoluteUrl('admin/customer/index') ?>">
-                                    <div class="clearfix">
-                                        <span class="pull-left">
-                                            <i class="btn btn-mini no-hover btn-success icon-shopping-cart"></i>
-                                            New Contact
-                                        </span>
-                                        <span class="pull-right badge badge-success">
-                                        <?php
-                                            if(isset($customer)){
-                                                echo count($customer);
-                                            }else{
-                                                echo '0';
-                                            }
-                                        ?></span>
-                                    </div>
-                                </a> 
-                        </li>
-                        <li>
-                            <a href="<?php echo Yii::app()->createAbsoluteUrl('admin/customer/index') ?>">
-                                See all notifications
-                                <i class="icon-arrow-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="light-blue">
+                <li class="dark">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
                         <span class="user-info">
                             <small>Welcome,</small>
