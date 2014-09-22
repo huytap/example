@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Asia/Ho_chi_minh');
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 //error_reporting(0);
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/framework/yii.php';
