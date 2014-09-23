@@ -1,7 +1,7 @@
 <section class="home-content clearfix">
 	<div class="container">
 		<div class="content" id="content">
-			<article class="content-left left">
+			<article class="content-left <?php if($_GET['cms'] !== 'su-kien') echo 'left';?>">
 				<?php
 				$gallery = '';
 				if($cms):
@@ -29,24 +29,29 @@
 				</div>
 				<?php endif;?>
 			</article>
-			<article class="content-right right">						
-				<div class="contact">
-					<div class="sub">
-						<h3>Liên hệ</h3>
-						<p class="first">Phòng kinh doanh</p>
-						<p>Điện thoại: <?php echo Yii::app()->params['phone']?></p>
-						<p>Fax: <?php echo Yii::app()->params['fax']?></p>
-						<p>Email: <?php echo Yii::app()->params['email']?></p>
+			<?php if(isset($_GET['cms']) && $_GET['cms'] == 'su-kien'):
+				$this->Widget('SidebarWidget');
+			else:?>
+				<article class="content-right right">						
+					<div class="contact">
+						<div class="sub">
+							<h3>Liên hệ</h3>
+							<p class="first">Phòng kinh doanh</p>
+							<p>Điện thoại: <?php echo Yii::app()->params['phone']?></p>
+							<p>Fax: <?php echo Yii::app()->params['fax']?></p>
+							<p>Email: <?php echo Yii::app()->params['email']?></p>
+						</div>
 					</div>
-				</div>
-				<div class="services">
-					<h3>Qui trình dịch vụ</h3>
-					<p>
-						Xem quy trình dịch vụ của chúng tôi 
-						<a href="<?php echo Yii::app()->baseUrl.'/data/'.$cms['file']?>">tại đây</a>
-					</p>
-				</div>
-			</article>
+					<div class="services">
+						<h3>Qui trình dịch vụ</h3>
+						<p>
+							Xem quy trình dịch vụ của chúng tôi 
+							<a href="<?php echo Yii::app()->baseUrl.'/data/'.$cms['file']?>">tại đây</a>
+						</p>
+					</div>
+				</article>
+			<?php 
+			endif;?>
 		</div>
 	</div>
 </section>

@@ -50,6 +50,7 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName' => false,
 			'rules'=>array(
+				'lien-he.html' => 'site/contact',
 				'su-kien/<sub_cms>.html' => array(
 					'cms/news',
 			    	'type' => 'db',

@@ -1,85 +1,45 @@
-<?php
-/* @var $this SiteController */
-/* @var $model ContactForm */
-/* @var $form CActiveForm */
-
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
-$this->breadcrumbs=array(
-	'Contact',
-);
-?>
-
-<h1>Contact Us</h1>
-
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
-
-<div class="flash-success">
-	<?php echo Yii::app()->user->getFlash('contact'); ?>
-</div>
-
-<?php else: ?>
-
-<p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-</p>
-
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'contact-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name'); ?>
-		<?php echo $form->error($model,'name'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email'); ?>
-		<?php echo $form->error($model,'email'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'subject'); ?>
-		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'subject'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'body'); ?>
-	</div>
-
-	<?php if(CCaptcha::checkRequirements()): ?>
-	<div class="row">
-		<?php echo $form->labelEx($model,'verifyCode'); ?>
-		<div>
-		<?php $this->widget('CCaptcha'); ?>
-		<?php echo $form->textField($model,'verifyCode'); ?>
-		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
-		<?php echo $form->error($model,'verifyCode'); ?>
-	</div>
-	<?php endif; ?>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- form -->
-
-<?php endif; ?>
+<section class="home-content clearfix">
+			<div class="container">
+				<div class="content">
+					<article class="content-left">
+						<h2>Liên hệ</h2>				
+						<div>							
+							<p>Cty TNHH MTV Môi Trường Đô Thị TP HCM xin chân thành cám ơn sự quan tâm, ủng hộ của quý khách đến các hoạt động của chúng tôi.</p>
+							<p>
+								<strong>Văn phòng Xí nghiệp Vận chuyển số 1</strong><br>
+								12 Quang Trung - Phường 11 - Quận Gò Vấp<br>
+								Điện thoại: (08) 39966834 – 39968927 – 38958675<br>
+								Fax: (08) 39968926
+							</p>
+							<p>
+								<strong>Văn phòng Xí nghiệp Vận chuyển số 2</strong><br>
+								Số 01 Tống Văn Trân - Phường 5 - Quận 11<br>
+								Điện thoại: (08) 38653614 - 38619857 - 38618818<br>
+								Fax: (08) 38618818
+							</p>
+							<p>
+								<strong>Văn phòng Xí nghiệp Vận chuyển số 3</strong><br>
+								150 Lê Đại Hành - Phường 7 - Quận 11<br>
+								 Điện thoại: (08) 38557783 - 38555664 <br>
+								 Fax : (08) 38557783
+							</p>
+							<p>
+								<strong>Văn phòng Xí nghiệp Dịch vụ Môi trường</strong><br>
+								Địa chỉ: 18 Kinh Dương Vương, Phường 13, Quận 06<br>
+								Điện thoại: (08) 38756115<br>
+								Fax : (08) 38754892
+							</p>
+							<p>
+								<strong>Xí nghiệp Xử lý chất thải</strong><br>
+									Địa chỉ: 377 Lê Văn Khương, Phường Hiệp Thành, Quận 12<br>
+									Điện thoại: (08) 37176016<br>
+									Fax : (08) 37175812
+							</p>
+						</div>
+					</article>
+					<?php
+					$this->Widget('SidebarWidget')?>
+				</div>
+			</div>
+		</section>
+		<!--end content-->

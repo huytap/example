@@ -6819,3 +6819,39 @@ Stack trace:
 REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
 HTTP_REFERER=http://moitruong.local/admin/component
 ---
+2014/09/23 14:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/noidung1.png".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('images/noidung1...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/noidung1.png
+HTTP_REFERER=http://moitruong.local/lien-he.html
+---
+2014/09/23 14:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/noidung2.png".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('images/noidung2...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/noidung2.png
+HTTP_REFERER=http://moitruong.local/lien-he.html
+---
+2014/09/23 14:57:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "su-kien/tin-tuc-noi-bo/hoi-thi-tuyen-truyen-bac-ho-trong-trai-tim-toi.html".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('su-kien/tin-tuc...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/su-kien/tin-tuc-noi-bo/hoi-thi-tuyen-truyen-bac-ho-trong-trai-tim-toi.html
+HTTP_REFERER=http://moitruong.local/su-kien/tin-tuc-noi-bo.html
+---
+2014/09/23 15:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "su-kien/tin-tuc-noi-bo/hoi-nghi-so-ket-cong-tac-6-thang-dau-nam-va-le-trao-tang-huy-hieu-30-nam-tuoi-dang.html".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('su-kien/tin-tuc...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/su-kien/tin-tuc-noi-bo/hoi-nghi-so-ket-cong-tac-6-thang-dau-nam-va-le-trao-tang-huy-hieu-30-nam-tuoi-dang.html
+HTTP_REFERER=http://moitruong.local/su-kien/tin-tuc-noi-bo.html
+---
