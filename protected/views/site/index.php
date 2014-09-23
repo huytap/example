@@ -3,39 +3,28 @@
 ?>
 
 <section class="container clearfix">
-	<article class="col_1_3">
-		<div class="thumbnail">
-			<figure>
-				<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl?>/frontend/images/img1.jpg" alt="">
-                    <div style="display: block;">
-                      	<strong>Dịch vụ</strong>
-                    </div>
-                </a>
-            </figure>
-				</div>
-	</article>
-			<article class="col_1_3">
+	<?php
+	if($component):
+		$i = 0;
+		foreach ($component as $c):
+			$i++;
+		$last = '';
+		if($i%3 == 0)
+			$last = ' last';?>
+			<article class="col_1_3<?php echo $last?>">
 				<div class="thumbnail">
 					<figure>
-						<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl?>/frontend/images/img2.jpg" alt="">
-	                        <div style="display: block;">
-	                        	<strong>Công ty thành viên</strong>
-	                        </div>
-	                    </a>
-                    </figure>
+						<a href="#">
+							<img src="<?php echo Yii::app()->baseUrl?>/images/<?php echo $c['cover_photo']?>" alt="<?php echo $c['title']?>">
+		                    <div style="display: block;">
+		                      	<strong><?php echo $c['title']?></strong>
+		                    </div>
+		                </a>
+		            </figure>
 				</div>
 			</article>
-			<article class="col_1_3 last">
-				<div class="thumbnail">
-					<figure>
-						<a href="#"><img src="<?php echo Yii::app()->theme->baseUrl?>/frontend/images/img3.jpg" alt="">
-	                        <div style="display: block;">
-	                        	<strong>Công nghệ</strong></a>
-	                        </div>
-                        </a>
-                    </figure>
-				</div>
-			</article>
+	<?php endforeach;
+		endif;?>
 </section>
 <!--end component-->
 <div class="container padding10"></div>

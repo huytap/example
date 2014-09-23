@@ -6454,3 +6454,368 @@ Stack trace:
 REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
 HTTP_REFERER=http://moitruong.local/admin/menu
 ---
+2014/09/23 13:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/23 13:43:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/default/index
+---
+2014/09/23 13:43:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/default/index
+---
+2014/09/23 13:43:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/images/favicon.ico".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/images/favicon.ico
+---
+2014/09/23 13:54:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/setting
+---
+2014/09/23 13:54:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/setting
+---
+2014/09/23 13:56:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 13:56:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 06:56:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in D:\Project\moitruong\protected\modules\admin\controllers\ComponentController.php:61
+Stack trace:
+#0 D:\Project\moitruong\framework\web\actions\CInlineAction.php(49): ComponentController->actionCreate()
+#1 D:\Project\moitruong\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 D:\Project\moitruong\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 D:\Project\moitruong\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 D:\Project\moitruong\framework\web\CWebApplication.php(282): CController->run('create')
+#5 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/component...')
+#6 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Project\moitruong\index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/component/create
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 13:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component/create
+---
+2014/09/23 13:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component/create
+---
+2014/09/23 13:59:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/compnent".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/compnent')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/compnent
+HTTP_REFERER=http://moitruong.local/admin/component/create
+---
+2014/09/23 13:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/compnent
+---
+2014/09/23 14:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/compnent".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/compnent')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/compnent
+---
+2014/09/23 14:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/compnent
+---
+2014/09/23 14:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/compnent".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/compnent')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/compnent
+---
+2014/09/23 14:02:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/compnent
+---
+2014/09/23 07:02:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in D:\Project\moitruong\protected\modules\admin\controllers\ComponentController.php:20
+Stack trace:
+#0 D:\Project\moitruong\framework\web\actions\CInlineAction.php(49): ComponentController->actionIndex()
+#1 D:\Project\moitruong\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 D:\Project\moitruong\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 D:\Project\moitruong\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 D:\Project\moitruong\framework\web\CWebApplication.php(282): CController->run('')
+#5 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/component')
+#6 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Project\moitruong\index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/component
+---
+2014/09/23 07:02:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in D:\Project\moitruong\protected\modules\admin\controllers\ComponentController.php:20
+Stack trace:
+#0 D:\Project\moitruong\framework\web\actions\CInlineAction.php(49): ComponentController->actionIndex()
+#1 D:\Project\moitruong\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 D:\Project\moitruong\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 D:\Project\moitruong\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 D:\Project\moitruong\framework\web\CWebApplication.php(282): CController->run('')
+#5 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/component')
+#6 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Project\moitruong\index.php(17): CApplication->run()
+#8 {main}
+REQUEST_URI=/admin/component
+HTTP_REFERER=http://moitruong.local/admin/
+---
+2014/09/23 07:03:07 [error] [exception.CException] exception 'CException' with message 'Property "Banner.photo" is not defined.' in D:\Project\moitruong\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Project\moitruong\framework\db\ar\CActiveRecord.php(145): CComponent->__get('photo')
+#1 D:\Project\moitruong\framework\base\CModel.php(596): CActiveRecord->__get('photo')
+#2 D:\Project\moitruong\protected\modules\admin\views\component\index.php(41): CModel->offsetGet('photo')
+#3 D:\Project\moitruong\framework\web\CBaseController.php(126): require('D:\Project\moit...')
+#4 D:\Project\moitruong\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\Project\moit...', Array, true)
+#5 D:\Project\moitruong\framework\web\CController.php(869): CBaseController->renderFile('D:\Project\moit...', Array, true)
+#6 D:\Project\moitruong\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 D:\Project\moitruong\protected\modules\admin\controllers\ComponentController.php(17): CController->render('index', Array)
+#8 D:\Project\moitruong\framework\web\actions\CInlineAction.php(49): ComponentController->actionIndex()
+#9 D:\Project\moitruong\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\Project\moitruong\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\Project\moitruong\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\Project\moitruong\framework\web\CWebApplication.php(282): CController->run('')
+#13 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/component')
+#14 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\Project\moitruong\index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/admin/component
+HTTP_REFERER=http://moitruong.local/admin/
+---
+2014/09/23 14:03:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:03:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component/create
+---
+2014/09/23 14:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component/create
+---
+2014/09/23 14:06:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:07:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:07:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:08:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:08:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:10:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/menu
+---
+2014/09/23 14:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/menu
+---
+2014/09/23 14:10:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/menu
+---
+2014/09/23 14:10:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/menu
+---
+2014/09/23 14:11:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---
+2014/09/23 14:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/component
+---

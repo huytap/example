@@ -27,6 +27,13 @@ class SiteController extends Controller
 			//$top1 = $this->getPage('');
 			//gallery
 			/*Gallery Library*/
+			//get component
+			$criteria_banner = new CDbCriteria;
+			$criteria_banner->select = 't.*';
+			$criteria_banner->condition = 'disabled=:status';
+			$criteria_banner->params = array(':status' => 1);
+			$criteria_banner->order = 'priority ASC';
+			$banner = Banner::model()->findAll($criteria_banner);
 			//if(!Yii::app()->cache->get('library')){
 				$slide_criteria = new CDbCriteria;
 				$slide_criteria->select = 't.*';
@@ -41,7 +48,8 @@ class SiteController extends Controller
 			// }
 			$this->render('index', array(
 				'news' => $news,
-				'library' => $library
+				'library' => $library,
+				'component' => $banner
 			));
 		}catch(Exception $e){
 

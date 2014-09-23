@@ -11,14 +11,6 @@ $arrAyMenu = array(
         'name'=>'<span class="menu-text"> Dashboard </span>'
         ),   
     ),
-   /*'language' =>array(
-      'parent'=>array(
-        'link'=> Yii::app()->createUrl('admin/language'),
-        'icon'=>'<i class="icon-book"></i>',
-        'name'=>'Langauges Control'
-      )
-    ),*/
-
    'menu' =>array(
       'parent'=>array(
         'link'=> Yii::app()->createUrl('admin/menu'),
@@ -38,6 +30,13 @@ $arrAyMenu = array(
         'link'=> Yii::app()->createUrl('admin/branch'),
         'icon'=>'<i class="icon-coffee"></i>',
         'name'=>'<span class="menu-text"> Quản lý chi nhánh </span>'
+        ),
+    ),
+   'component' => array(
+      'parent'=> array(
+        'link'=> Yii::app()->createUrl('admin/component'),
+        'icon'=>'<i class="icon-book"></i>',
+        'name'=>'<span class="menu-text"> Quản lý trang con </span>'
         ),
     ),
    'gallery'=>array(
