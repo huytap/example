@@ -37,8 +37,19 @@
 							</p>
 						</div>
 					</article>
+					<article class="content-right">
 					<?php
-					$this->Widget('SidebarWidget')?>
+					foreach($ads as $ad):?>
+						<div class="thumbnail">
+							<figure>
+								<a href="<?php echo $ad['link_url']?>">
+									<img src="<?php echo Yii::app()->baseUrl?>/images/<?php echo $ad['photo']?>">
+								</a>
+					        </figure>
+						</div>
+					<?php
+						endforeach;?>
+					</article>
 				</div>
 			</div>
 		</section>

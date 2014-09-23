@@ -81,6 +81,12 @@ class SiteController extends Controller
 
 	public function actionContact()
 	{
+		//ads
+				$criteria = new CDbCriteria;
+				$criteria->condition = 'disabled=:status';
+				$criteria->params = array(':status' => 1);
+				$ads = Ads::model()->findAll($criteria);
+
 		$model=new ContactForm;
 		if(isset($_POST['ContactForm']))
 		{
@@ -99,7 +105,7 @@ class SiteController extends Controller
 				$this->refresh();
 			}
 		}
-		$this->render('contact',array('model'=>$model));
+		$this->render('contact',array('model'=>$model, 'ads' => $ads));
 	}
 
 	public function actionLogin()
