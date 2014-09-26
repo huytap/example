@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-    'System',
+    'Cài đặt chung',
 );
 ?>
 <?php if (Yii::app()->user->hasFlash('setting')): ?>
@@ -171,9 +171,14 @@ $this->breadcrumbs = array(
 
                 <div class="widget-main">
                     <div class="row-fluid">
-                        <label>Địa chỉ</label>
-                        <?php echo $form->textField($model, 'address', array('class' => 'input-medium search-query span12')); ?>
+                        <label class="control-label" for="form-field-2">Qui trình dịch vụ (upload file tại đây)
+                            <span class="help-button" data-rel="popover" data-trigger="hover" data-placement="left">?</span>
+                        </label>
+                        <?php echo $form->fileField($model, 'service_file', array('class' => 'id-input-file-1')); ?>
                     </div>
+                </div>
+                <div class="widget-main">
+                    Đường dẫn file: <?php echo Yii::app()->baseUrl. '/data/' . $model->service_file;?>
                 </div>
 
             </div>

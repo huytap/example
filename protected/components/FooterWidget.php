@@ -7,7 +7,19 @@
 		}
 		public function getfooter()
 		{			
-			$this->render('footer');
+			$model = new Contact();
+			$flag = false;
+			if(isset($_POST['Contact'])){
+				$model->attributes = $_POST['Contact'];
+				$model->created_date = time();
+				$model->validate();
+				if(!$model->hasErrors()){
+					if($model->save()){
+						$flag = true;
+					}
+				}
+			}
+			$this->render('footer', compact('model', 'flag'));
 		}
 	}
 ?>

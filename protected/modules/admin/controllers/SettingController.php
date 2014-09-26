@@ -39,29 +39,21 @@ class SettingController extends AdminController
 
                 $setting->setDbItem('youtube', $model->youtube);
 
-                $filelogo = CUploadedFile::getInstance($model,'logo');
+                $filelogo = CUploadedFile::getInstance($model,'service_file');
                 if($filelogo !== null){
-                    $baseImagePath = YII_UPLOAD_DIR . '/logo/';
-                    $newName = 'logo' . '_' . time() . rand(1,10000). '.' . $filelogo->extensionName;
+                    $newName = 'qui_trinh_dich_vu' . '_' . time() . rand(1,10000). '.' . $filelogo->extensionName;
                     Yii::log($newName, 'error');
-                    if($filelogo->saveAs($baseImagePath.$newName))
+                    if($filelogo->saveAs(Yii::app()->basePath.'/../data/'.$newName))
                     {
-                        $model->logo = $newName;
-                        $setting->setDbItem('logo', $newName);
-                        
-  //                           //resize image logo
-                               $ImageProcessing = new ImageProcessing();       
-                               $ImageProcessing->folder = '/data/logo/';
-                               $ImageProcessing->file = $newName;
-                               $ImageProcessing->thumbs =array(
-                                                                'small'=>array('width'=>190,'height'=>55),
-//                                                                'logo_footer'=>array('width'=>183,'height'=>34),
-                                                              );  
-                               $ImageProcessing->create_thumbs();
+                        $model->service_file = $newName;
+                        $setting->setDbItem('service_file', $newName);
+                        if(file_exists(Yii::app()->basePath . "/../data/$filelogo")){
+                            unlink(Yii::app()->basePath . "/../data/$filelogo");
+                        }
                     }
                 } else{
-                    $model->logo = $setting->getItem('logo');
-                    $setting->setDbItem('logo',Yii::app()->params['logo']);
+                    $model->service_file = $setting->getItem('service_file');
+                    $setting->setDbItem('service_file',Yii::app()->params['service_file']);
                 } 
                 Yii::app()->user->setFlash('setting', 'Setting has been updated.');
                 $this->refresh();

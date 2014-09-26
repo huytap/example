@@ -361,3 +361,7 @@ font-style: normal;margin-bottom: 10px;}
 .dev7-caroufredsel-next,
 .dev7-caroufredsel-pag { margin: 10px 0; }
 
+.errorMessage{
+	font-family: 'Arial';
+	font-size: 12px;
+}

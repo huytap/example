@@ -15,8 +15,8 @@ class SidebarWidget extends CWidget{
 				$criteria->condition = 'disabled=:status';
 				$criteria->params = array(':status' => 1);
 				$ads = Ads::model()->findAll($criteria);
-				
 				//map
+				
 				$map = new CDbCriteria;
 				$map->condition = 'menu_id=:menu';
 				$map->params = array(':menu' => $menu['id']);

@@ -65,26 +65,26 @@ $arrAyMenu = array(
       'parent'=> array(
           'link'=> '#',
           'icon'=>'<i class="icon-user"></i>',
-          'name'=>'<span class="menu-text"> Manage User </span><b class="arrow icon-angle-down"></b>'
+          'name'=>'<span class="menu-text"> Quản lý User </span><b class="arrow icon-angle-down"></b>'
       ),
       'submenu' => array(
           'user' => array(
              'link' => Yii::app()->createUrl('admin/manageadmin'),
              'icon' => '<i class="icon-double-angle-right"></i>',
-              'name' => 'Manage User',
+              'name' => 'Quản lý user',
             ),
-            // 'customer' => array(
-            //   'link' => Yii::app()->createUrl('admin/customer'),
-            //   'icon' => '<i class="icon-double-angle-right"></i>',
-            //   'name' => 'Manage Customer',
-            // ),
+            'customer' => array(
+              'link' => Yii::app()->createUrl('admin/customer'),
+              'icon' => '<i class="icon-double-angle-right"></i>',
+              'name' => 'Quản lý khách hàng',
+            ),
         ),
     ), 
    'setting'=>array(
     'parent'=> array(
         'link'=>  Yii::app()->createUrl('admin/setting'),
         'icon'=>'<i class="icon-cogs"></i>',
-        'name'=>'<span class="menu-text"> Settings </span>'
+        'name'=>'<span class="menu-text"> Cài đặt chung </span>'
         ),   
     ),
    );

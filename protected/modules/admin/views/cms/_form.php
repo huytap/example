@@ -66,14 +66,6 @@ $form = $this->beginWidget('CActiveForm', array(
         </div>
     </div>
 
-    <div class="control-group">
-        <label class="control-label">Tài liệu quy trình dịch vụ</label>
-        <div class="controls span3" style="margin:10px">
-            <?php echo $form->fileField($model, 'file', array('class' => 'id-input-file-1')); ?>
-            <span class="help-inline"><?php echo $form->error($model, 'file'); ?></span>
-        </div>
-    </div>
-
      <div class="controls">
         <label>
             <input name="Cms[index]" type="checkbox" <?php if($model['index']) echo "checked='checked'";?>>

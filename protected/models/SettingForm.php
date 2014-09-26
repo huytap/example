@@ -22,6 +22,7 @@ class SettingForm extends CFormModel {
     public $address;
     public $phone;
     public $fax;
+    public $service_file;
 
     public function rules() {
         $return = array();
@@ -29,15 +30,15 @@ class SettingForm extends CFormModel {
             $return[] = array($value, 'safe');
         endforeach;
         $return [] = array('facebook', 'length', 'max' => 200);
-        $return [] = array('logo', 'file', 'on' => 'updateSettings',
+        $return [] = array('service_file', 'file', 'on' => 'updateSettings',
             'allowEmpty' => true,
-            'types' => 'jpg,gif,png,tiff',
-            'wrongType' => 'Only jpg,gif,png,tiff allowed',
+            //'types' => 'jpg,gif,png,tiff',
+            //'wrongType' => 'Only jpg,gif,png,tiff allowed',
             'maxSize' => 1024 * 1024 * 3, // 8MB
             'tooLarge' => 'The file was larger than 3MB. Please upload a smaller file.',
         );
         $return [] = array('logo', 'match', 'pattern' => '/^[^\\/?*:&;{}\\\\]+\\.[^\\/?*:&;{}\\\\]{3}$/', 'message' => 'Image files name cannot include special characters: &%$#', 'on' => 'updateSettings');
-        $return [] = array('fax_company, phone_company, address_company, company, fax, youtube, address, phone, email, facebook', 'safe');
+        $return [] = array('service_file, fax_company, phone_company, address_company, company, fax, youtube, address, phone, email, facebook', 'safe');
         return $return;
     }
 
@@ -55,7 +56,8 @@ class SettingForm extends CFormModel {
         'title' => 'title',
         'meta_description' => 'meta_description',
         'meta_keywords' => 'meta_keywords',       
-        'fax' => 'fax'
+        'fax' => 'fax',
+        'service_file' => 'service_file'
         
     );
 

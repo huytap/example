@@ -17,10 +17,25 @@
             
     <div class="col_1_3 last">
         <h3>Phản hồi</h3>
-        <input class="text" type="text" placeholder="Tên..." />
-        <input type="email" class="email" placeholder="Email..." />
-        <textarea rows="3" class="text_area" placeholder="Nội dung..."></textarea>
-        <input type="submit" value="Gửi" class="btnSubmit" />
+        <?php $form= $this->beginWidget('CActiveForm', array(
+                    'id' => 'menu-form',
+                    'enableAjaxValidation' => false,
+                    'enableClientValidation' => true,
+                    'htmlOptions' => array(
+                        'class' => 'form-horizontal')
+                ));?>
+
+            <?php echo $form->textField($model, 'name', array( "class" => "text", "placeholder"=>"Tên..."));?>
+            
+            <?php echo $form->emailField($model, 'email', array("class" => "email", "placeholder"=>"Email..."));?>
+            
+            <?php echo $form->textArea($model, 'content', array("rows" => "3", "class" => "text_area", "placeholder"=>"Nội dung..."));?>
+            <input type="submit" value="Gửi" class="btnSubmit" />
+            <?php echo $form->error($model, 'name')?>
+            <?php echo $form->error($model, 'email')?>
+            <?php echo $form->error($model, 'content')?>
+            
+        <?php $this->endWidget();?>
     </div>
 </footer>
 <section class="footer_bg clearfix">
@@ -30,3 +45,8 @@
     </div>
 </section>
 <!--end footer-->
+<script type="text/javascript">
+    <?php if(isset($flag) && $flag == true):?>
+            alert("Thông tin của bạn đã được gửi tới chúng tôi. Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất. Xin cảm ơn!")
+        <?php endif;?>
+</script>
