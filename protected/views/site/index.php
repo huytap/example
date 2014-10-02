@@ -1,7 +1,8 @@
 <?php
 	$this->pageTitle =  Yii::app()->params['title'];
+	Yii::app()->clientScript->registerMetaTag(Yii::app()->params['meta_keywords'], 'keywords');
+	Yii::app()->clientScript->registerMetaTag(Yii::app()->params['meta_keywords'], 'description');
 ?>
-
 <section class="container clearfix">
 	<?php
 	if($component):

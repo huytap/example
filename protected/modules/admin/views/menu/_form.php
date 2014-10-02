@@ -61,13 +61,44 @@ $form = $this->beginWidget('CActiveForm', array(
 
     <div class="controls">
         <label>
-            <input name="Menu[static_page]" type="checkbox" <?php if($model['static_page']) echo "checked='checked'";?>>
+            <input id="static" name="Menu[static_page]" type="checkbox" <?php if($model['static_page']) echo "checked='checked'";?>>
             <span class="lbl"> Là trang tĩnh?</span>
         </label>
     </div>
+    <div <?php if($model['static_page']) echo 'style="display:none"';?> id="meta">
+        <div class="control-group">
+            <label class="control-label">Meta title</label>
+            <div class="controls">
+                <?php
+                    echo $form->textField($model,'meta_title', array("placeholder"=>"Meta title","maxlength"=>"255", "size"=>"60"))
+                ?>
+                <span class="help-inline"><?php echo $form->error($model, 'meta_title'); ?></span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Meta keywords</label>
+            <div class="controls">
+                <?php
+                    echo $form->textField($model,'meta_keywords', array("placeholder"=>"Meta keywords","maxlength"=>"255", "size"=>"60"))
+                ?>
+                <span class="help-inline"><?php echo $form->error($model, 'meta_keywords'); ?></span>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">Meta description</label>
+            <div class="controls">
+                <?php
+                    echo $form->textField($model,'meta_description', array("placeholder"=>"Meta description","maxlength"=>"255", "size"=>"60"))
+                ?>
+                <span class="help-inline"><?php echo $form->error($model, 'meta_description'); ?></span>
+            </div>
+        </div>
+    </div>
     
     <div class="control-group">
-        <label class="control-label">Status</label>
+        <label class="control-label">Trạng thái</label>
         <div class="controls">
             <?php 
             echo $form->dropDownlist($model, 'disabled', MyFunctionCustom::$status);?>
@@ -81,3 +112,12 @@ $form = $this->beginWidget('CActiveForm', array(
     </div>
 </div>
 <?php $this->endWidget(); ?>
+<script type="text/javascript">
+    $('#static').click(function(){
+        if($(this).attr('checked')){
+            $('#meta').hide();
+        }else{
+            $('#meta').show();
+        }
+    })
+</script>

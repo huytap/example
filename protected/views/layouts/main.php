@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<?php $this->Widget('CssWidget');?>
-
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
 </head>
 
 <body>

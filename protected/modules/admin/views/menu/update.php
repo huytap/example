@@ -1,9 +1,9 @@
 <?php
 $this->breadcrumbs = array(
-    'Quản lý menu' => array('index'),
-    'Cập nhật menu',
+    'Quản lý trang' => array('index'),
+    'Cập nhật trang',
 );
 ?><div class="page-header position-relative">
-    <h1>Cập nhật menu</h1>
+    <h1>Cập nhật trang</h1>
 </div><!--/.page-header-->
 <?php echo $this->renderPartial('_form', array('model' => $model)); ?>

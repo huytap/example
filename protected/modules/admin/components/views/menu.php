@@ -15,7 +15,7 @@ $arrAyMenu = array(
       'parent'=>array(
         'link'=> Yii::app()->createUrl('admin/menu'),
         'icon'=>'<i class="icon-list"></i>',
-        'name'=>'Quản lý menu'
+        'name'=>'Quản lý trang'
       )
     ),
    'ads' => array(

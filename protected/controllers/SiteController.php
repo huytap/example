@@ -52,6 +52,7 @@ class SiteController extends Controller
 				'component' => $banner
 			));
 		}catch(Exception $e){
+			echo $e;
 
 		}
 	}
@@ -81,14 +82,18 @@ class SiteController extends Controller
 
 	public function actionContact()
 	{
-		//ads
-				$criteria = new CDbCriteria;
-				$criteria->condition = 'disabled=:status';
-				$criteria->params = array(':status' => 1);
-				$ads = Ads::model()->findAll($criteria);
+		try{
+			$menu = Menu::model()->findByAttributes(array('url' => 'lien-he'));
 
-		$model = BranchCompany::model()->findAll();
-		$this->render('contact',array('model'=>$model, 'ads' => $ads));
+			$criteria = new CDbCriteria;
+			$criteria->condition = 'disabled=:status';
+			$criteria->params = array(':status' => 1);
+			$ads = Ads::model()->findAll($criteria);
+			$model = BranchCompany::model()->findAll();
+			$this->render('contact',array('model'=>$model, 'ads' => $ads, 'menu' => $menu));
+		}catch(Exception $e){
+			echo $e;
+		}
 	}
 
 	public function actionLogin()

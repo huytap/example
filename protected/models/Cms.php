@@ -14,8 +14,8 @@ class Cms extends CActiveRecord
 			array('gallery_id, menu_id, index, created_date', 'numerical', 'integerOnly'=>true),
 			array('file, title, cover_photo, url, page', 'length', 'max'=>255),
 			array('short_description', 'length', 'max'=>765),
-			array('description', 'safe'),
-			array('file, gallery_id, id, title, index, url, page, short_description, description, menu_id, cover_photo, created_date', 'safe', 'on'=>'search'),
+			array('description, meta_keyword, meta_title, meta_description', 'safe'),
+			array('file, meta_keyword, meta_title, meta_description, gallery_id, id, title, index, url, page, short_description, description, menu_id, cover_photo, created_date', 'safe', 'on'=>'search'),
 		);
 	}
 

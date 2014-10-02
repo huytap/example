@@ -73,6 +73,37 @@ $form = $this->beginWidget('CActiveForm', array(
         </label>
     </div>
 
+    <div class="control-group">
+        <label class="control-label">Meta title</label>
+        <div class="controls">
+            <?php
+                echo $form->textField($model,'meta_title', array("placeholder"=>"Meta title","maxlength"=>"255", "size"=>"60"))
+            ?>
+            <span class="help-inline"><?php echo $form->error($model, 'meta_title'); ?></span>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Meta keyword</label>
+        <div class="controls">
+            <?php
+                echo $form->textField($model,'meta_keyword', array("placeholder"=>"Meta keyword","maxlength"=>"255", "size"=>"60"))
+            ?>
+            <span class="help-inline"><?php echo $form->error($model, 'meta_keyword'); ?></span>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Meta description</label>
+        <div class="controls">
+            <?php
+                echo $form->textField($model,'meta_description', array("placeholder"=>"Meta description","maxlength"=>"255", "size"=>"60"))
+            ?>
+            <span class="help-inline"><?php echo $form->error($model, 'meta_description'); ?></span>
+        </div>
+    </div>
+
+
     <div class="control-group" >
         <label class="control-group">Mô tả ngắn</label>
     </div>       

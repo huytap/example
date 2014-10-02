@@ -12,8 +12,8 @@ class Menu extends CActiveRecord
 			array('priority', 'required'),
 			array('show_link_parent, parent_id, static_page, disabled, priority', 'numerical', 'integerOnly'=>true),
 			array('name, url', 'length', 'max'=>100),
-			array('cover_photo', 'length', 'max'=>255),
-			array('cover_photo, show_link_parent, id, name, url, parent_id, static_page, disabled, priority', 'safe', 'on'=>'search'),
+			array('meta_keywords, meta_title, meta_description,cover_photo', 'length', 'max'=>255),
+			array('meta_keywords, meta_title, meta_description, cover_photo, show_link_parent, id, name, url, parent_id, static_page, disabled, priority', 'safe', 'on'=>'search'),
 		);
 	}
 

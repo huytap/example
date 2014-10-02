@@ -5,6 +5,8 @@
 			if(count($cms) >0):?>		
 				<?php
 				if(count($cms) == 1):
+					Yii::app()->clientScript->registerMetaTag($cms[0]['meta_keyword'], 'keywords');
+					Yii::app()->clientScript->registerMetaTag($cms[0]['meta_description'], 'description');
 					echo '<article class="content-left">';
 					$this->pageTitle = $cms[0]['title'];
 					echo '<h2>'. $cms[0]['title'].'</h2>';
@@ -13,7 +15,10 @@
 				else:
 					echo '<article class="content-left">';
 					echo '<h2>'. $cms[0]['menu']['name'].'</h2>';
-					$this->pageTitle = $cms[0]['menu']['name'];
+					$this->pageTitle = $cms[0]['menu']['meta_title'];
+					Yii::app()->clientScript->registerMetaTag($cms[0]['menu']['meta_keywords'], 'keywords');
+					Yii::app()->clientScript->registerMetaTag($cms[0]['menu']['meta_description'], 'description');					
+
 					foreach ($cms as $key => $value):						
 						$url = '';
 						if($value['menu']['parent_id'] !== null){

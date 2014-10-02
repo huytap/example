@@ -4,9 +4,10 @@
 			<article class="content-left <?php if($_GET['cms'] !== 'su-kien') echo 'left';?>">
 				<?php
 				$gallery = '';
-				if($cms):
-					$this->pageTitle = $cms['title'];?>
-
+				if($cms && $cms['meta_title']):
+					$this->pageTitle = $cms['meta_title'];
+					Yii::app()->clientScript->registerMetaTag($cms['meta_keyword'], 'keywords');
+					Yii::app()->clientScript->registerMetaTag($cms['meta_description'], 'description');?>
 				<h2><?php echo $cms['title']?></h2>			
 				<div>
 					<?php 

@@ -15,7 +15,7 @@ class CmsController extends Controller{
 				$this->render('index', compact('cms'));
 			}
 		}catch(Exception $e){
-			echo 'Invaild request!';
+			echo 'Không tìm thấy yêu cầu';
 			die;
 		}
 	}
