@@ -8913,3 +8913,94 @@ Stack trace:
 REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
 HTTP_REFERER=http://moitruong.local/admin/cms
 ---
+2014/10/02 20:46:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in D:\Project\moitruong\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Project\moitruong\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Project\moitruong\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Project\moitruong\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Project\moitruong\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 D:\Project\moitruong\protected\extensions\MyConfig\MyConfig.php(207): CApplication->getDb()
+#5 D:\Project\moitruong\protected\extensions\MyConfig\MyConfig.php(41): MyConfig->loadDbItems()
+#6 D:\Project\moitruong\framework\base\CModule.php(387): MyConfig->init()
+#7 D:\Project\moitruong\framework\base\CModule.php(103): CModule->getComponent('setting')
+#8 D:\Project\moitruong\protected\models\SettingForm.php(70): CModule->__get('setting')
+#9 D:\Project\moitruong\index.php(15): SettingForm::applySettings()
+#10 {main}
+REQUEST_URI=/
+---
+2014/10/02 20:46:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in D:\Project\moitruong\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Project\moitruong\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Project\moitruong\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Project\moitruong\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Project\moitruong\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 D:\Project\moitruong\protected\extensions\MyConfig\MyConfig.php(207): CApplication->getDb()
+#5 D:\Project\moitruong\protected\extensions\MyConfig\MyConfig.php(41): MyConfig->loadDbItems()
+#6 D:\Project\moitruong\framework\base\CModule.php(387): MyConfig->init()
+#7 D:\Project\moitruong\framework\base\CModule.php(103): CModule->getComponent('setting')
+#8 D:\Project\moitruong\protected\models\SettingForm.php(70): CModule->__get('setting')
+#9 D:\Project\moitruong\index.php(15): SettingForm::applySettings()
+#10 {main}
+REQUEST_URI=/
+---
+2014/10/02 20:46:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/03 17:03:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/06 14:14:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/06 14:15:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/js/jquery-2.0.3.min.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/js/jquery-2.0.3.min.js
+HTTP_REFERER=http://moitruong.local/admin/default/index
+---
+2014/10/06 14:15:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/default/index
+---
+2014/10/06 14:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/frontend/images/favicon.ico".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/frontend/images/favicon.ico
+---
+2014/10/06 14:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/default/backend/js/jquery.ba-bbq.js".' in D:\Project\moitruong\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Project\moitruong\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/default/...')
+#1 D:\Project\moitruong\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Project\moitruong\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/default/backend/js/jquery.ba-bbq.js
+HTTP_REFERER=http://moitruong.local/admin/ads
+---
