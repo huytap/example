@@ -1,9 +1,11 @@
 <section class="home-content clearfix">
 	<div class="container">
-		<div class="content">
+        <div class="content">
+        <?php
+        if(count($news) > 1):?>		
 			<article class="content-left">
 				<h2>TIN TỨC MỚI NHẤT</h2>	
-				<?php
+				<?php                
                     $this->widget('zii.widgets.CListView', array(
                         'dataProvider' => $news,
                         'itemView' => '_view',
@@ -14,10 +16,15 @@
                             'prevPageLabel' => '&lt&lt',
                             'nextPageLabel' => '&gt&gt',
                         ), 
-                    ));?>
+                    ));
+                ?>
 			</article>
 			<?php $this->Widget('SidebarWidget');?>
-		</div>
+        <?php
+        else:
+            echo "<article class='content-left'>Không tìm thấy yêu cầu hợp lệ</article>";
+        endif;?>
+        </div>
 	</div>
 </section>
 <!--end content-->

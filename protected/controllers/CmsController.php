@@ -15,7 +15,7 @@ class CmsController extends Controller{
 				$this->render('index', compact('cms'));
 			}
 		}catch(Exception $e){
-			echo 'Không tìm thấy yêu cầu';
+			echo 'Không tìm thấy yêu cầu hợp lệ';
 			die;
 		}
 	}
@@ -35,7 +35,7 @@ class CmsController extends Controller{
 				}
 			}
 		}catch(Exception $e){
-			echo 'Invaild request!';
+			echo 'Không tìm thấy yêu cầu hợp lệ';
 		}
 	}
 
@@ -58,7 +58,7 @@ class CmsController extends Controller{
 				$this->render('news', compact('news'));
 			}
 		}catch(Exception $e){
-			echo 'Invaild request!';
+			echo 'Không tìm thấy yêu cầu hợp lệ';
 		}
 	}
 
@@ -68,7 +68,7 @@ class CmsController extends Controller{
 
 			$this->render('view', compact('cms'));
 		}catch(Exception $e){
-
+			echo 'Không tìm thấy yêu cầu hợp lệ';
 		}
 	}
 }

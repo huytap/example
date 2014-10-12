@@ -1,15 +1,7 @@
-<?php
-/* @var $this SiteController */
-/* @var $error array */
-
-$this->pageTitle=Yii::app()->name . ' - Error';
-$this->breadcrumbs=array(
-	'Error',
-);
-?>
-
-<h2>Error <?php echo $code; ?></h2>
-
-<div class="error">
-<?php echo CHtml::encode($message); ?>
-</div>
+<section class="home-content clearfix">
+	<div class="container">
+		<div class="content">	
+			<article class="content-left"><p>Không tìm thấy yêu cầu hợp lệ</p></article>
+		</div>
+	</div>
+</section>

@@ -45,7 +45,7 @@
 			<?php
 			$this->Widget('SidebarWidget')?>
 			<?php else:?>
-				<article class="content-left"><p>Không tìm thấy yêu cầu của bạn</p></article>
+				<article class="content-left"><p>Không tìm thấy yêu cầu hợp lệ</p></article>
 			<?php endif;?>
 		</div>
 	</div>

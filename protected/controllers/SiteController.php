@@ -52,7 +52,7 @@ class SiteController extends Controller
 				'component' => $banner
 			));
 		}catch(Exception $e){
-			echo $e;
+			echo 'Không tìm thấy yêu cầu của bạn';
 
 		}
 	}
@@ -92,7 +92,7 @@ class SiteController extends Controller
 			$model = BranchCompany::model()->findAll();
 			$this->render('contact',array('model'=>$model, 'ads' => $ads, 'menu' => $menu));
 		}catch(Exception $e){
-			echo $e;
+			echo 'Không tìm thấy yêu cầu của bạn';
 		}
 	}
 

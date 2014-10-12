@@ -5,8 +5,27 @@ class MyFunctionCustom extends CActiveRecord{
 		'about_us' => 'About Us',
 		'blog' => 'Blog'
 	);
-
+	public static function Menu($parentid, $id = null, $res = '', $sep = ''){
+		$criteria = new CDbCriteria;
+		$criteria->condition = 'disabled=:status';
+		$criteria->params = array(':status' => 1);
+		$model = Menu::model()->findAll($criteria);
+		foreach($model as $v){
+			if($v['parent_id'] == $parentid){
+				if($id == $v['id']){
+					$re = $sep . "<option selected='selected' value='". $v['id'] ."'>-" . (isset($v['parent']['name']) ? '-'.$v['parent']['name']. '/' : ''). $v['name'] ."</option>";
+				}
+				else{
+					$re = $sep . "<option value='". $v['id'] ."'>-" . (isset($v['parent']['name']) ? '-'.$v['parent']['name']. '/' : ''). $v['name'] ."</option>";
+				}
+				$res .= MyFunctionCustom::Menu($v['id'], null, $re, $sep);
+			}
+		}
+		return $res;
+	}
 	public static function page_menu(){
+		
+
 		$criteria = new CDbCriteria;
 		$criteria->condition = 'disabled=:status';
 		$criteria->params = array(':status' => 1);
@@ -14,7 +33,7 @@ class MyFunctionCustom extends CActiveRecord{
 		$menu = array();
 		foreach ($model as $key => $value) {
 			$menu[$key]['id'] = $value['id'];
-			if($value['parent_id'] !== Null){				
+			if($value['parent_id']!==null){				
 				$menu[$key]['name'] = $value['parent']['name'].'/ '.$value['name'];
 			}else{
 				$menu[$key]['name'] = $value['name'];

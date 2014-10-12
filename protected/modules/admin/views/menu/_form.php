@@ -21,7 +21,7 @@ $form = $this->beginWidget('CActiveForm', array(
     </div>
 
     <div class="control-group">
-        <label class="control-label">Menu Name</label>
+        <label class="control-label">Tên Menu</label>
         <div class="controls">
             <?php echo $form->textField($model, 'name', array('placeholder' => 'Menu name', "maxlength"=>"100", "size"=>"60"));?>
             <span class="help-inline"><?php echo $form->error($model, 'name'); ?></span>
@@ -29,9 +29,9 @@ $form = $this->beginWidget('CActiveForm', array(
     </div>
 
     <div class="control-group">
-        <label class="control-label">Parent Menu</label>
+        <label class="control-label">Menu Cha</label>
         <div class="controls">
-            <?php echo $form->dropDownlist($model, 'parent_id', MyFunctionCustom::parent_menu(),array('empty' => '-- Parent Menu --'));?>
+            <?php echo $form->dropDownlist($model, 'parent_id', MyFunctionCustom::page_menu(),array('empty' => '-- Parent Menu --'));?>
             <span class="help-inline"><?php echo $form->error($model, 'name'); ?></span>
         </div>
     </div>

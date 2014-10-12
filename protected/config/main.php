@@ -79,6 +79,24 @@ return array(
 			    		)
 			    	),
 			   	),
+			   	'<cms>/<sub_sub>/<sub_cms>.html' => array(
+			   		'cms/index',
+			   		'type' => 'db',
+			   		'field' => array(
+			   			'cms' => array(
+			   				'table' => 'menu',
+			   				'field' => 'url'
+			   			),
+			   			'sub_sub' => array(
+			   				'table' => 'menu',
+			   				'field' => 'url'
+			   			),
+			   			'sub_menu' => array(
+			   				'table' => 'menu',
+			   				'field' => 'url'
+			   			)
+			   		),
+			   	),
 			   	'<cms>/<sub_cms>.html' => array(
 			   		'cms/index',
 			   		'type' => 'db',
