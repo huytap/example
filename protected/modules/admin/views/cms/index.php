@@ -13,9 +13,9 @@ $this->breadcrumbs = array(
     
 Chọn trang: <?php 
 if(isset($_GET['Cms']['menu_id'])) {
-    echo CHtml::dropDownlist("Cms[menu_id]",'', MyFunctionCustom::cms(),array('empty'=>'Tất cả','options' => array($_GET['Cms']['menu_id'] => array('selected' => true))));    
+    echo CHtml::dropDownlist("Cms[menu_id]",'', MyFunctionCustom::page_menu(),array('empty'=>'Tất cả','options' => array($_GET['Cms']['menu_id'] => array('selected' => true))));    
 }else{
-    echo CHtml::dropDownlist("Cms[menu_id]",'', MyFunctionCustom::cms(),array('empty'=>'Tất cả')); 
+    echo CHtml::dropDownlist("Cms[menu_id]",'', MyFunctionCustom::page_menu(),array('empty'=>'Tất cả')); 
 }?>
     
 <?php $this->endWidget(); ?>

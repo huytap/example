@@ -51,7 +51,39 @@ return array(
 			'showScriptName' => false,
 			'rules'=>array(
 				'lien-he.html' => 'site/contact',
-				'su-kien/<sub_cms>.html' => array(
+				'<parent_url>/<slug>.html' => array(
+					'page/view',
+					'type' => 'db',
+					'fields' => array(
+						'parent_url' => array(
+			    			'table' => 'menu',
+			    			'field' => 'url'
+			    		),
+			    		'slug' => array(
+			    			'table' => 'menu',
+			    			'field' => 'url'
+			    		),
+			    	)
+				),
+				'<parent_url>/<slug>/<sub_url>-<id>.html' => array(
+					'page/viewdetail',
+					'type' => 'db',
+					'fields' => array(
+						'parent_url' => array(
+			    			'table' => 'menu',
+			    			'field' => 'url'
+			    		),
+			    		'sub_url' => array(
+			    			'table' => 'menu',
+			    			'field' => 'url'
+			    		),
+			    		'slug' => array(
+			    			'table' => 'menu',
+			    			'field' => 'url'
+			    		),
+			    	)
+				),
+				/*'su-kien/<sub_cms>.html' => array(
 					'cms/news',
 			    	'type' => 'db',
 			    	'fields' => array(
@@ -120,7 +152,7 @@ return array(
 			   				'field' => 'url'
 			   			),
 			   		),
-			   	),
+			   	),*/
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

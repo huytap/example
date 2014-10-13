@@ -14,7 +14,7 @@ $form = $this->beginWidget('CActiveForm', array(
     <div class="control-group">
         <label class="control-label">Chọn trang</label>
         <div class="controls">
-            <?php echo $form->dropDownlist($model, 'menu_id', MyFunctionCustom::cms(),array('empty' => '-- Chọn trang --'));?>
+            <?php echo $form->dropDownlist($model, 'menu_id', MyFunctionCustom::page_menu(),array('empty' => '-- Chọn trang --'));?>
             <span class="help-inline"><?php echo $form->error($model, 'menu_id'); ?></span>
             
         </div>

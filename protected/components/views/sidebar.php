@@ -1,5 +1,7 @@
 <?php
-	if(isset($_GET['cms']) && $_GET['cms'] == 'san-pham-dich-vu' && isset($_GET['cms_detail'])):	?>
+
+	if(isset($_GET['parent_url'], $_GET['sub_url'], $_GET['slug']) && 
+		$_GET['parent_url'] == 'san-pham-dich-vu'):?>
 		<article class="content-right right">						
 			<div class="contact">
 				<div class="sub">
@@ -19,7 +21,7 @@
 				</div>
 			</article>
 	<?php
-	elseif(count($branch) >0):?>
+	elseif(isset($branch) && count($branch) >0):?>
 		<article class="content-right right">
 			<div class="google-map">
 	        	<?php echo $branch['map'];?>

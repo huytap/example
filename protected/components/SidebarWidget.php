@@ -7,8 +7,8 @@ class SidebarWidget extends CWidget{
 	}
 
 	public function getsidebar(){
-		if(isset($_GET['sub_cms'])){
-			$menu = Menu::model()->findByAttributes(array('url' => $_GET['sub_cms']));
+		if(isset($_GET['slug'])){
+			$menu = Menu::model()->findByAttributes(array('url' => $_GET['slug']));
 			if($menu){
 				//ads
 				$criteria = new CDbCriteria;
